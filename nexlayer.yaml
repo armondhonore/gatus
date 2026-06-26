@@ -2,7 +2,7 @@ application:
   name: gatus
   pods:
   - name: app
-    image: twinproduction/gatus:latest
+    image: mirror.gcr.io/twinproduction/gatus:latest
     path: /
     servicePorts:
     - 8080
