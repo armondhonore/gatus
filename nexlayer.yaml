@@ -7,9 +7,6 @@ application:
     servicePorts:
     - 8080
     volumes:
-    - name: gatus-config
-      mountPath: /config
-      size: 1Gi
     - name: gatus-data
       mountPath: /data
       size: 2Gi
