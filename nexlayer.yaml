@@ -2,14 +2,11 @@ application:
   name: gatus
   pods:
   - name: app
-    image: twinproduction/gatus:latest
+    image: mirror.gcr.io/twinproduction/gatus:latest
     path: /
     servicePorts:
     - 8080
     volumes:
-    - name: gatus-config
-      mountPath: /config
-      size: 1Gi
     - name: gatus-data
       mountPath: /data
       size: 2Gi
